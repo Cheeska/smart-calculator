@@ -4,25 +4,31 @@ class SmartCalculator {
   }
 
   add(number) {
-    return this.value + number;
+    this.value = this.value + number;
+    return this;
   }
   
   subtract(number) {
-    return  this.value - number;
-
+      this.value = this.value - number;
+      return this.value;
   }
 
   multiply(number) {
-    return this.value * number;
+      this.value = this.value * number;
+      return this.value;
   }
 
   devide(number) {
-    return this.value / number;
+      this.value = this.value / number;
+      return this.value;
   }
 
   pow(number) {
-    return Math.pow(this.value, number);
+
+      this.value = Math.pow(this.value, number);
+      return this.value;
   }
 }
 
 module.exports = SmartCalculator;
+
