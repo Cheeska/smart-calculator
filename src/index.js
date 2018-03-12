@@ -34,6 +34,11 @@ class SmartCalculator {
       }
   }
   
-  module.exports = SmartCalculator;
+  //module.exports = SmartCalculator;
   
+  const calculator = new SmartCalculator(2);
   
+  const value = calculator
+      .add(2)
+      .multiply(2);
+  console.log(value);
