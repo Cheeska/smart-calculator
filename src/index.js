@@ -29,7 +29,7 @@ class SmartCalculator {
         return this;
     }
   
-    valueView() {
+    valueOf() {
         return eval(this.value);
       }
   }
