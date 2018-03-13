@@ -119,7 +119,7 @@ console.log(value);
     }
 
     pow(number) {
-        this.value =  this.value + '^' + String(number);
+        this.value =  this.value + '**' + String(number);
         return this;
     }
 
